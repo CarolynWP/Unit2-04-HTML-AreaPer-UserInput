@@ -7,5 +7,5 @@ function calculate () {
   const area = base * height / 2
 
   // the output
-  document.getElementById('area').innerHTML = 'The area of your rectangle is ' + area + ' cm'
+  document.getElementById('area').innerHTML = 'The area of your triangle is ' + area + ' cm'
 }
