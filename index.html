@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Area and Perimeter calculator" />
+    <meta name="keywords" content="immaculata ics2o" />
+    <meta name="author" content="Carolyn" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Dogwood tree -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+		
+		<!-- MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" />
+		
+		<!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Area of a Triangle</title>
+		
+  </head>
+	
+	<!-- Body -->
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Area of a Triangle Calculator!</span>
+        </div>
+      </header>
+			
+			<!-- Content start -->
+      <main class="mdl-layout__content">
+				<img src="./image/triangles.png" alt="triangles">
+				<br>
+<h5>Enter the base and height of a triangle to get its area:</h5>
+				
+        <!-- Base -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="base-of-triangle"
+            />
+            <label class="mdl-textfield__label" for="length-of-rectangle">Base</label>
+            <span class="mdl-textfield__error">ERROR: Input must be a number!</span>
+          </div>
+        </form>
+				
+        <!-- Height -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="height-of-triangle"
+            />
+            <label class="mdl-textfield__label" for="width-of-rectangle">Height</label>
+            <span class="mdl-textfield__error">ERROR: Input must be a number!</span>
+          </div>
+        </form>
+				
+        <!-- Button -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
+          onclick="calculate()"
+        >
+          Calculate
+        </button>
+        <br />
+        <p>
+          <div id="answers">
+            <div id="area"></div>
+          </div>
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
